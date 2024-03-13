@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="input__container">
+        <div class="input__sub-container">
+          <label for="b-day">Day</label>
+          <input 
+          type="number" 
+          placeholder="DD" 
+          id="b-day"
+          min="0" 
+          max="31"
+          required/>
+          <p id="invalid-b-day" class="invalid-date">Must be a valid day</p>
+        </div>
+        <div class="input__sub-container">
+          <label id="input-month-label" for="b-month">Month</label>
+          <input type="number" 
+          placeholder="MM" 
+          id="b-month"
+          min="1"
+          max="12"
+          required />
+          <p id="invalid-b-month" class="invalid-date">Must be a valid month</p>
+
+        </div>
+
+        <div class="input__sub-container">
+          <label for="b-year">Year</label>
+          <input 
+          type="number" 
+          placeholder="YYYY" 
+          id="b-year" 
+          min="1"
+          max="2024"
+          required/>
+          <p id="invalid-b-year" class="invalid-date">Must be a valid year</p>
+
+        </div>
+      </form>
+
+      <div class="page-break">
+        <hr /><button id="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="3"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+      </div>
+      <h2>
+        <span id="output-year">--</span> years <br />
+        <span id="output-month">--</span> months <br />
+        <span id="output-day">--</span> days
+      </h1>
+    </div>
+    <div class="attribution offscreen">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

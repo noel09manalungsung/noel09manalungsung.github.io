@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="carousel-style.css" />
   </head>
   <body>
     <nav class="navigation flex-group">
@@ -158,6 +159,101 @@
       <section class="section portfolio">
         <h2 class="section__title">Portfolio</h2>
         <h3 class="portolio__h3">Graphic Designs</h3>
+        <div class="carousel">
+          <div class="carousel__button carousel__button--left is-hidden">
+            <img src="./images/svg/arrows.svg" alt="carousel-arrow" />
+          </div>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD1.jpg"
+                  alt="graphic design 1"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD2.jpg"
+                  alt="graphic design 2"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD3.jpg"
+                  alt="graphic design 3"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD4.jpg"
+                  alt="graphic design 4"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD5.jpg"
+                  alt="graphic design 5"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD6.jpg"
+                  alt="graphic design 6"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD7.jpg"
+                  alt="graphic design 7"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD8.jpg"
+                  alt="graphic design 8"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD9.jpg"
+                  alt="graphic design 9"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/designs square/GD10.jpg"
+                  alt="graphic design 10"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="carousel__button carousel__button--right">
+            <img src="./images/svg/arrows.svg" alt="carousel-arrow" />
+          </div>
+        </div>
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button
+          ><button class="carousel__indicator"></button
+          ><button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+
         <div class="portfolio__graphic-designs"></div>
         <h3 class="portolio__h3">Web Designs</h3>
         <div class="portfolio__web-designs"></div>
@@ -177,5 +273,7 @@
         </form>
       </section>
     </main>
+
+    <script src="carousel.js"></script>
   </body>
 </html>

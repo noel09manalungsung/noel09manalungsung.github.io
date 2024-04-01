@@ -1,0 +1,227 @@
+:root {
+  /* COLORS */
+  /* Primary */
+  --primary-accent-darker: hsl(28, 89%, 45%);
+  --primary-accent: hsl(28, 93%, 52%);
+  --primary: hsl(198, 86%, 60%);
+
+  /* Neutral  */
+  --neutral-900: hsl(198, 60%, 16%);
+  --neutral-800: hsl(198, 80%, 25%);
+  --neutral-200: hsl(0, 0%, 95%);
+  --neutral-100: hsl(0, 0%, 100%);
+
+  --drop-shadow: drop-shadow(0px 5px 5px hsla(0, 0%, 0%, 0.2));
+
+  /* FONTS */
+  --ff: Roboto, Arial;
+  --fs: 12px;
+  --fw-lite: 300;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --border-radius: 10px;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  color: var(--neutral-900);
+  font-family: var(--ff);
+  font-size: var(--fs);
+  font-weight: var(--fw-normal);
+}
+
+button {
+  background-color: var(--primary-accent);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--neutral-100);
+  font-weight: var(--fw-bold);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+button:hover,
+button:active {
+  cursor: pointer;
+  background-color: var(--primary-accent-darker);
+  filter: var(--drop-shadow);
+}
+
+.navigation {
+  background-color: var(--neutral-200);
+  filter: var(--drop-shadow);
+  justify-content: space-between;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.main {
+  margin-top: 5rem;
+}
+
+.section {
+  padding: 1.5rem;
+}
+
+.section:nth-of-type(even) {
+  background-color: var(--neutral-200);
+}
+
+.section__title {
+  margin: 1rem;
+}
+
+h1 {
+  color: var(--neutral-800);
+  font-size: 2.5rem;
+  line-height: normal;
+}
+
+h1 > span {
+  color: var(--primary-accent);
+}
+
+h2 {
+  color: var(--neutral-800);
+  font-weight: var(--fw-lite);
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+}
+
+.contact-links {
+  justify-content: space-between;
+  margin: 1.5rem 0px;
+}
+.contact-links__icon {
+  fill: var(--primary-secondary);
+}
+
+.section__title {
+  background-image: url(./images/svg/blue-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--neutral-100);
+  font-weight: var(--fw-bold);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.about-me__ul {
+  list-style: none;
+}
+
+.about-me__ul > li {
+  background-image: url(./images/svg/arrows.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-y: center;
+  padding-left: 1.5rem;
+  line-height: 1.9;
+}
+
+.download-cv {
+  margin: 1rem 0px;
+}
+
+.skill__container {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-card {
+  background-color: var(--neutral-200);
+  border-radius: var(--border-radius);
+  max-width: 10rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.skill-card-background {
+  background-color: var(--primary-accent);
+  border-radius: calc(var(--border-radius) * 2);
+  justify-content: center;
+  padding: 0.5rem;
+}
+.skill-card-background > img {
+  height: auto;
+  width: 80px;
+}

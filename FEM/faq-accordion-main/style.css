@@ -1,0 +1,147 @@
+/* || IMPORTS  */
+@import url(https://fonts.google.com/specimen/Work+Sans);
+/* || RESET  */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* || FONT  */
+  --FS: 16px;
+  --FF: "specimen", Arial;
+  --THIN: 400;
+  --NORMAL: 600;
+  --THICK: 700;
+  /* || COLORS  */
+  --WHITE: hsl(0, 0%, 100%);
+  --LIGHT-PINK: hsl(275, 100%, 97%);
+  --GREYISH-PURPLE: hsl(292, 16%, 49%);
+  --DARK-PURPLE: hsl(292, 42%, 14%);
+  --PURPLE: #ad28eb;
+  /* || BORDERS  */
+
+  /* || STANDARD PADDING  */
+
+  /* || STANDARD MARGIN  */
+}
+
+/* || UTILITIES  */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES  */
+body {
+  align-items: center;
+  background-color: var(--LIGHT-PINK);
+  display: flex;
+  font-family: var(--FF);
+  height: 100vh;
+  justify-content: center;
+}
+
+/* || CONTAINER  */
+.background {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 100vw;
+}
+
+/* || CONTAINER  */
+.container {
+  background-color: var(--WHITE);
+  width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+/* || MAIN  */
+.faq {
+  display: flex;
+}
+.faq img {
+  margin-right: 1rem;
+}
+
+.accordion label:hover {
+  cursor: pointer;
+  color: var(--PURPLE);
+}
+
+.accordion label {
+  align-items: center;
+  color: var(--DARK-PURPLE);
+  display: flex;
+
+  font-size: small;
+  font-weight: var(--NORMAL);
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-image: url(./assets/images/icon-plus.svg);
+  background-size: contain;
+}
+
+.content {
+  background-color: var(--WHITE);
+  color: var(--GREYISH-PURPLE);
+  font-size: calc(var(--FS) * 0.8);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+hr {
+  opacity: 10%;
+}
+
+/* MAIN FUNCTION */
+.accordion input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* OTHER DESIGNS */
+.accordion input:checked ~ .content {
+  max-height: 10rem;
+}
+
+.accordion input:checked ~ label .icon {
+  background-image: url(./assets/images/icon-minus.svg);
+}

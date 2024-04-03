@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+:root {
+  --COLOR-GREEN: hsl(75, 94%, 57%);
+  --COLOR-WHITE: hsl(0, 0%, 100%);
+  --COLOR-GREY: hsl(0, 0%, 20%);
+  --COLOR-DARKGREY: hsl(0, 0%, 12%);
+  --COLOR-BLACK: hsl(0, 0%, 8%);
+
+  --FS: 14px;
+  --FF: "Inter", Arial;
+  --FONTWEIGHT-THIN: 400;
+  --FONTWEIGHT-NORMAL: 600;
+  --FONTWEIGHT-THICK: 700;
+}
+
+.offscreen {
+  position: absolute;
+  top: -10000px;
+}
+
+body {
+  align-items: center;
+  background-color: var(--COLOR-BLACK);
+  color: var(--COLOR-WHITE);
+  display: grid;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--COLOR-DARKGREY);
+  border-radius: 1rem;
+  display: grid;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+  width: 400px;
+  gap: 1rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 6rem;
+  margin: auto;
+}
+
+.address,
+button {
+  font-weight: var(--FONTWEIGHT-THICK);
+}
+
+.address {
+  color: var(--COLOR-GREEN);
+}
+
+button {
+  background-color: var(--COLOR-GREY);
+  border-radius: 0.5rem;
+  color: var(--COLOR-WHITE);
+  padding: 1rem;
+  border: none;
+}
+
+button:hover,
+button:active {
+  background-color: var(--COLOR-GREEN);
+  color: var(--COLOR-GREY);
+  cursor: pointer;
+}

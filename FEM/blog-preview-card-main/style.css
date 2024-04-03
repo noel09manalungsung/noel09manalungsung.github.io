@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:wght@200;400&family=Playfair+Display:ital@0;1&family=Roboto:wght@100;400&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+/* || ATTRIBUTES  */
+:root {
+  /* || COLORS  */
+  --YELLOW: hsl(47, 88%, 63%);
+  --WHITE: hsl(0, 0%, 100%);
+  --GREY: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+
+  /* || FONTS  */
+  --FS: 16px;
+  --FF: "Figtree", arial;
+  --FONTWEIGHT-THICK: 600;
+
+  /* || BORDER  */
+  --BORDER-RADIUS: 1.5rem;
+
+  /* || GAP */
+  --GAP: 0.5rem;
+
+  /* ||SHADOW  */
+}
+.offscreen {
+  position: absolute;
+  top: -10000px;
+}
+
+body {
+  height: 100svh;
+  display: flex;
+  align-content: center;
+  font-family: var(--FF);
+  background-color: var(--YELLOW);
+}
+
+.container {
+  background-color: var(--WHITE);
+  border-radius: var(--BORDER-RADIUS);
+  color: var(--Black);
+  display: flex;
+  filter: drop-shadow(5px 5px black);
+  flex-direction: column;
+  gap: var(--GAP);
+  margin: auto;
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.container img {
+  border-radius: calc(var(--BORDER-RADIUS) / 2);
+}
+
+.container:hover {
+  filter: drop-shadow(10px 10px black);
+}
+
+.date,
+.header,
+.profile-name {
+  font-size: small;
+}
+
+.header {
+  background-color: var(--YELLOW);
+  padding: 0.3rem;
+  font-weight: var(--FONTWEIGHT-THICK);
+  border-radius: calc(var(--BORDER-RADIUS) / 5);
+  max-width: fit-content;
+}
+
+.link,
+.container p,
+.profile {
+  margin-top: 0.5rem;
+}
+
+.header-link {
+  font-size: large;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--Black);
+  font-weight: var(--FONTWEIGHT-THICK);
+}
+
+.link:hover,
+.link:active {
+  color: var(--YELLOW);
+}
+
+.container p {
+  color: var(--GREY);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  font-weight: var(--FONTWEIGHT-THICK);
+}
+
+.profile img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,105 @@
+/* || IMPORTS  */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* || RESET  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* || FONT  */
+  --FS: 15px;
+  --FF: "Outfit", Arial;
+  /* || COLORS  */
+  --WHITE: hsl(0, 0%, 100%);
+  --LIGHT-GREY: hsl(212, 45%, 89%);
+  --GRAYISH-BLUE: hsl(220, 15%, 55%);
+  --DARK-BLUE: hsl(218, 44%, 22%);
+  /* || BORDERS  */
+  --BORDER-RADIUS: 1.5rem;
+  /* || STANDARD PADDING  */
+
+  /* || STANDARD MARGIN  */
+}
+
+/* || UTILITIES  */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES  */
+body {
+  align-items: center;
+  background-color: var(--LIGHT-GREY);
+  display: flex;
+  font-family: var(--FF);
+  height: 100vh;
+  justify-content: center;
+}
+
+.main {
+  background-color: var(--WHITE);
+  border-radius: var(--BORDER-RADIUS);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+}
+
+.image__container {
+  border-radius: calc(var(--BORDER-RADIUS) / 1.5);
+  overflow: hidden;
+}
+
+h1 {
+  color: var(--DARK-BLUE);
+  font-size: calc(var(--FS) * 1.2);
+}
+p {
+  color: var(--GRAYISH-BLUE);
+  font-size: var(--FS);
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    padding: 2rem;
+  }
+  .main {
+    width: 100%;
+  }
+  h1 {
+    font-size: calc(var(--FS) * 2);
+  }
+  p {
+    font-size: calc(var(--FS) * 1.2);
+  }
+}

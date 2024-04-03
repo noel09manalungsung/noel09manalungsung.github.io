@@ -1,0 +1,238 @@
+:root {
+  --clr-primary: hsl(4, 100%, 67%);
+  --clr-primary-lite: hsla(4, 100%, 67%, 0.2);
+  --clr-secondary: hsl(0, 98%, 61%);
+  --clr-neutral-900: hwb(234 14% 74%);
+  --clr-neutral-600: hsl(235, 18%, 26%);
+  --clr-neutral-400: hsl(231, 7%, 60%);
+  --clr-neutral-200: hsla(231, 7%, 60%, 0.5);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --gradient: linear-gradient(
+    to right,
+    var(--clr-secondary),
+    var(--clr-primary)
+  );
+
+  --shadow-primary: rgb(255, 98, 87, 0.1);
+  --shadow-secondary: rgb(253, 58, 58, 0.1);
+  /* FONTS */
+  --fs: 16px;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --ff: "Roboto", arial;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CONTENT */
+body {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-600);
+  display: flex;
+  font-family: var(--ff);
+  font-size: var(--fs);
+  font-weight: var(--fw-normal);
+  height: 100vh;
+}
+
+.content {
+  background-color: var(--clr-neutral-100);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+#sign-up__container {
+  width: 100%;
+}
+
+#success {
+  display: none;
+  height: 100%;
+  max-width: 450px;
+}
+
+.success__sub-container {
+  margin: auto 0px;
+  position: relative;
+}
+
+.success__sub-container img {
+  height: 64px;
+  top: -5rem;
+  left: -8rem;
+  position: absolute;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.content ul li {
+  background-image: url(./assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+  padding-left: 2rem;
+}
+
+.content__footer {
+  display: grid;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: small;
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+}
+
+#email {
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 0.5rem;
+  outline-style: none;
+  padding: 1rem;
+}
+
+/* INVALID STATE */
+input:invalid {
+  background-color: var(--clr-primary-lite);
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+#invalid-error {
+  color: var(--clr-primary);
+  display: none;
+}
+
+.button {
+  background-color: var(--clr-neutral-900);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.button:hover {
+  background-image: var(--gradient);
+  cursor: pointer;
+  box-shadow: -5px -10px 20px 10px var(--shadow-primary),
+    5px 10px 20px 10px var(--shadow-secondary);
+}
+
+/* OTHERS */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA */
+@media only screen and (min-width: 550px) {
+  body {
+    align-items: center;
+    background-color: var(--clr-neutral-900);
+    justify-content: center;
+  }
+  #sign-up__container {
+    align-items: center;
+    background-color: var(--clr-neutral-100);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    padding: 1rem;
+  }
+  #sign-up__container > picture {
+    order: 1;
+  }
+  #sign-up__container > picture > img {
+    max-height: 600px;
+  }
+  #success {
+    border-radius: 2rem;
+    height: auto;
+    padding: 3rem;
+  }
+  .success__sub-container img {
+    position: relative;
+    top: -1rem;
+    left: -9rem;
+  }
+}

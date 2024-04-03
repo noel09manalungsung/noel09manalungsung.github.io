@@ -23,7 +23,6 @@
   margin: 0;
   padding: 0;
   position: relative;
-  transition: 250ms ease-in;
 }
 
 .carousel__slide {

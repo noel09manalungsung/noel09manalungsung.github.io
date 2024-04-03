@@ -30,6 +30,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  transition: 250ms ease-in;
+
   /* border: 1px dotted red; */
 }
 /*
@@ -129,6 +131,7 @@ button:active {
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 1;
 }
 
 .main {
@@ -169,9 +172,15 @@ h3 {
 .contact-links {
   justify-content: space-between;
   margin: 1.5rem 0px;
+  max-width: 18rem;
 }
 .contact-links__icon {
-  fill: var(--primary-secondary);
+  fill: var(--neutral-800);
+}
+
+.contact-links__icon:hover,
+.contact-links__icon:active {
+  fill: var(--neutral-900);
 }
 
 .section__title {
@@ -210,7 +219,7 @@ h3 {
 .skill-card {
   background-color: var(--neutral-200);
   border-radius: var(--border-radius);
-  max-width: 10rem;
+  max-width: 9.5rem;
   padding: 1rem;
   text-align: center;
 }
@@ -224,4 +233,19 @@ h3 {
 .skill-card-background > img {
   height: auto;
   width: 80px;
+}
+
+.portfolio__web-designs {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio__web-designs__image {
+  height: 9.5rem;
+  filter: var(--drop-shadow);
+}
+
+.portfolio__web-designs__image:hover,
+.portfolio__web-designs__image:active {
+  transform: scale(1.125);
 }

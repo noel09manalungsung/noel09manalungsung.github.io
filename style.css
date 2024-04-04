@@ -30,7 +30,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  transition: 250ms ease-in;
 
   /* border: 1px dotted red; */
 }
@@ -124,6 +123,7 @@ button:active {
 }
 
 .navigation {
+  align-items: center;
   background-color: var(--neutral-200);
   filter: var(--drop-shadow);
   justify-content: space-between;
@@ -132,6 +132,19 @@ button:active {
   width: 100%;
   top: 0px;
   z-index: 1;
+}
+
+.navigation > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.navigation > ul > li > a {
+  color: var(--neutral-800);
+}
+.navigation > ul > li > a:hover {
+  color: var(--primary-accent);
 }
 
 .main {
@@ -166,7 +179,7 @@ h2 {
 }
 
 h3 {
-  padding-bottom: 0.5rem;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .contact-links {
@@ -180,7 +193,7 @@ h3 {
 
 .contact-links__icon:hover,
 .contact-links__icon:active {
-  fill: var(--neutral-900);
+  fill: var(--primary-accent);
 }
 
 .section__title {
@@ -190,7 +203,7 @@ h3 {
   background-size: contain;
   color: var(--neutral-100);
   font-weight: var(--fw-bold);
-  padding: 0.5rem;
+  padding: 0.8rem;
   text-align: center;
 }
 
@@ -248,4 +261,27 @@ h3 {
 .portfolio__web-designs__image:hover,
 .portfolio__web-designs__image:active {
   transform: scale(1.125);
+  transition: 150ms ease;
+}
+.contact-me__form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-me__form > input,
+.contact-me__form > textarea {
+  border: 2px solid var(--neutral-800);
+  border-radius: var(--border-radius);
+  padding: 10px;
+}
+
+.contact-me__form > label {
+  font-size: large;
+}
+
+.contact-me__form-button {
+  margin: 1rem 0;
+}
+
+#message {
 }

@@ -1,0 +1,177 @@
+/* || IMPORTS  */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* || FONT  */
+  --FONT-FAMILY: "Hanken Grotesk", arial;
+  --FONT-SIZE: 15px;
+  /* || COLORS  */
+  --DIVIDER: 0.1;
+  --LIGHT-RED: hsl(0, 100%, 67%);
+  --ORANGEY-YELLOW: hsl(39, 100%, 56%);
+  --GREEN-TEAL: hsl(166, 100%, 37%);
+  --COBALT-BLUE: hsl(234, 85%, 45%);
+  --TRANSPARENT-LIGHT-RED: hsl(0, 100%, 67%, var(--DIVIDER));
+  --TRANSPARENT-ORANGEY-YELLOW: hsl(39, 100%, 56%, var(--DIVIDER));
+  --TRANSPARENT-GREEN-TEAL: hsl(166, 100%, 37%, var(--DIVIDER));
+  --TRANSPARENT-COBALT-BLUE: hsl(234, 85%, 45%, var(--DIVIDER));
+  /* || GRADIENTS  */
+  --LIGHT-SLATE-BLUE: hsl(252, 100%, 67%);
+  --LIGHT-ROYAL-BLUE: hsl(241, 81%, 54%);
+  --VIOLET-BLUE: hsla(256, 72%, 46%, 1);
+  --PERSIAN-BLUE: hsla(241, 72%, 46%, 0);
+
+  --GRADIENT: linear-gradient(
+    to bottom,
+    var(--LIGHT-SLATE-BLUE),
+    var(--LIGHT-ROYAL-BLUE)
+  );
+  /* || NEUTRAL  */
+  --WHITE: hsl(0, 0%, 100%);
+  --PALE-BLUE: hsl(221, 100%, 96%);
+  --LIGHT-LAVENDER: hsl(241, 100%, 89%);
+  --DARK-GREY-BLUE: hsl(224, 30%, 27%);
+
+  /* || BORDERS  */
+  --BORDER-RADIUS: 1.5rem;
+  /* || STANDARD PADDING  */
+
+  /* || STANDARD MARGIN  */
+}
+
+/* || UTILITIES  */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || GENERAL STYLES  */
+body {
+  align-items: center;
+  background-color: var(--WHITE);
+  display: flex;
+  font-family: var(--FONT-FAMILY);
+  justify-content: center;
+  height: 100vh;
+}
+
+.main__container {
+  background-color: var(--WHITE);
+  border-radius: var(--BORDER-RADIUS);
+  grid-template-columns: 50% 50%;
+  display: grid;
+  max-width: 600px;
+  overflow: hidden;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));
+}
+.result__container,
+.summary__container {
+  padding: 2rem;
+  width: 300px;
+}
+
+.result__container {
+  align-items: center;
+  border-radius: var(--BORDER-RADIUS);
+  display: flex;
+  background-image: var(--GRADIENT);
+  color: var(--LIGHT-LAVENDER);
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--WHITE);
+}
+h2 {
+  color: white;
+}
+
+.average__container {
+  align-items: center;
+  background-color: var(--LIGHT-ROYAL-BLUE);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  justify-content: center;
+  width: 8rem;
+}
+
+.summary__container {
+  display: grid;
+  gap: 1rem;
+}
+.summary__sub-container {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+button {
+  background-color: var(--DARK-GREY-BLUE);
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  padding: 5px;
+  width: 100%;
+}
+button:hover {
+  background-image: var(--GRADIENT);
+  cursor: pointer;
+}
+
+.reaction__container {
+  background-color: var(--TRANSPARENT-LIGHT-RED);
+  color: var(--LIGHT-RED);
+}
+.memory__container {
+  background-color: var(--TRANSPARENT-ORANGEY-YELLOW);
+  color: var(--ORANGEY-YELLOW);
+}
+.verbal__container {
+  background-color: var(--TRANSPARENT-GREEN-TEAL);
+  color: var(--GREEN-TEAL);
+}
+.visual__container {
+  background-color: var(--TRANSPARENT-COBALT-BLUE);
+  color: var(--COBALT-BLUE);
+}
+.score {
+  color: #000;
+}
+.over {
+  color: grey;
+}

@@ -126,6 +126,7 @@ button:active {
   align-items: center;
   background-color: var(--neutral-200);
   filter: var(--drop-shadow);
+  height: 60px;
   justify-content: space-between;
   padding: 0.5rem;
   position: fixed;
@@ -142,6 +143,7 @@ button:active {
 
 .navigation > ul > li > a {
   color: var(--neutral-800);
+  text-decoration: none;
 }
 .navigation > ul > li > a:hover {
   color: var(--primary-accent);
@@ -153,6 +155,8 @@ button:active {
 
 .section {
   padding: 1.5rem;
+  scroll-snap-align: start;
+  scroll-margin: 40px;
 }
 
 .section:nth-of-type(even) {
@@ -215,7 +219,7 @@ h3 {
   background-image: url(./images/svg/arrows.svg);
   background-repeat: no-repeat;
   background-size: 15px;
-  background-position-y: center;
+  background-position-y: 3px;
   padding-left: 1.5rem;
   line-height: 1.9;
 }
@@ -248,7 +252,12 @@ h3 {
   width: 80px;
 }
 
+.portfolio__h3 {
+  margin-top: 2rem;
+}
+
 .portfolio__web-designs {
+  margin-top: 1rem;
   justify-content: center;
   gap: 1rem;
 }
@@ -283,5 +292,15 @@ h3 {
   margin: 1rem 0;
 }
 
-#message {
+.footer {
+  background-color: var(--neutral-900);
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  width: 100%;
+}
+.instagram {
+  position: relative;
+  top: 4px;
 }

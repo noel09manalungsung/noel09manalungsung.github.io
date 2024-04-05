@@ -12,6 +12,7 @@
 }
 
 .carousel__track-container {
+  filter: var(--drop-shadow);
   height: 100%;
   overflow: hidden;
   position: relative;

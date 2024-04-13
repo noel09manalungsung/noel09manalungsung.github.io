@@ -21,6 +21,7 @@
   --fw-bold: 600;
 
   --border-radius: 10px;
+  --gap: 1rem;
 }
 
 /*
@@ -30,7 +31,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
   /* border: 1px dotted red; */
 }
 /*
@@ -138,7 +138,7 @@ button:active {
 .navigation > ul {
   display: flex;
   list-style-type: none;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .navigation > ul > li > a {
@@ -210,6 +210,15 @@ h3 {
   padding: 0.8rem;
   text-align: center;
 }
+.about__sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.about-me__content-container > img {
+  display: none;
+}
 
 .about-me__ul {
   list-style: none;
@@ -230,25 +239,32 @@ h3 {
 
 .skill__container {
   justify-content: center;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .skill-card {
+  align-items: center;
   background-color: var(--neutral-200);
   border-radius: var(--border-radius);
-  max-width: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
   padding: 1rem;
   text-align: center;
 }
 
 .skill-card-background {
+  align-items: center;
   background-color: var(--primary-accent);
-  border-radius: calc(var(--border-radius) * 2);
+  border-radius: 999px;
+  display: flex;
+  height: 120px;
   justify-content: center;
   padding: 0.5rem;
+  width: 120px;
 }
 .skill-card-background > img {
-  height: auto;
+  height: 80px;
   width: 80px;
 }
 
@@ -259,7 +275,7 @@ h3 {
 .portfolio__web-designs {
   margin-top: 1rem;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .portfolio__web-designs__image {
@@ -274,7 +290,9 @@ h3 {
 }
 .contact-me__form {
   display: grid;
-  gap: 0.5rem;
+  gap: calc(var(--gap) / 2);
+  max-width: 400px;
+  margin: auto;
 }
 
 .contact-me__form > input,
@@ -294,13 +312,61 @@ h3 {
 
 .footer {
   background-color: var(--neutral-900);
+  height: 50px;
+  width: 100%;
+}
+.footer__icons-container {
   align-items: center;
   display: flex;
-  height: 50px;
   justify-content: space-around;
-  width: 100%;
+  margin: auto;
+  width: 400px;
 }
 .instagram {
   position: relative;
   top: 4px;
+}
+
+@media screen and (min-width: 599px) {
+  :root {
+    --fs: 14px;
+    --gap: 2rem;
+  }
+  .landing-page {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .landing-page__left {
+    height: 100%;
+  }
+  .portfolio__web-designs__image {
+    height: 15rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me__content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+  }
+  .about-me__content-container > img {
+    display: block;
+    align-self: center;
+  }
+
+  .contact-me__content-container {
+    display: flex;
+  }
+  .contact-me__form {
+    width: 100%;
+  }
+  .section,
+  .navigation {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }

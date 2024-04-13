@@ -55,7 +55,6 @@
 }
 
 .carousel__nav {
-  display: flex;
   display: none;
   justify-content: center;
   padding: 10px 0;
@@ -76,4 +75,14 @@
 
 .is-hidden {
   display: none;
+}
+
+@media screen and (min-width: 599px) {
+  .carousel {
+    height: 500px;
+    width: 50%;
+  }
+  .carousel__nav {
+    display: flex;
+  }
 }

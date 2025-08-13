@@ -272,6 +272,14 @@ h3 {
   margin-top: 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+#more {
+  display: block;
+  margin: 0 auto;
+}
+
 .portfolio__web-designs {
   margin-top: 1rem;
   justify-content: center;

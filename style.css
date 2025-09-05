@@ -336,6 +336,17 @@ a {
   top: 4px;
 }
 
+.youtube-shorts {
+  margin: 1rem auto;
+  gap: 1rem;
+  justify-content: center;
+}
+.youtube-shorts__video {
+  box-shadow: var(--drop-shadow);
+  height: 22rem;
+  width: 18rem;
+}
+
 @media screen and (min-width: 599px) {
   :root {
     --fs: 14px;
@@ -354,6 +365,41 @@ a {
   h1 {
     font-size: 5rem;
   }
+}
+/* make the youtube-shorts taller instead of gaps*/
+.youtube-shorts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+@media (min-width: 640px) {
+  .youtube-shorts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .youtube-shorts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.youtube-shorts__video {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  height: 22rem;
+  width: 18rem;
+}
+
+/* This is the key change: Make the iframe fill its parent's dimensions */
+.youtube-shorts__video iframe {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {

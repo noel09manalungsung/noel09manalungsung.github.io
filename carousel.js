@@ -3,12 +3,11 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   const slides = Array.from(track.children);
   const nextButton = carousel.querySelector(".carousel__button--right");
   const prevButton = carousel.querySelector(".carousel__button--left");
-  const dotsNav = carousel.nextElementSibling; // nav is right after carousel
+  const dotsNav = carousel.nextElementSibling;
   const dots = Array.from(dotsNav.children);
 
   const slideWidth = slides[0].getBoundingClientRect().width;
 
-  // arrange slides side by side
   slides.forEach((slide, index) => {
     slide.style.left = slideWidth * index + "px";
   });
@@ -44,7 +43,6 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     const currentDot = dotsNav.querySelector(".current-slide");
     const prevDot = currentDot.previousElementSibling;
     const prevIndex = slides.findIndex((slide) => slide === prevSlide);
-
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
     hideShowArrows(slides, prevButton, nextButton, prevIndex);
@@ -57,24 +55,71 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     const currentDot = dotsNav.querySelector(".current-slide");
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex((slide) => slide === nextSlide);
-
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
   });
 
-  // click nav
+  // click dot
   dotsNav.addEventListener("click", (e) => {
     const targetDot = e.target.closest("button");
     if (!targetDot) return;
-
     const currentSlide = track.querySelector(".current-slide");
     const currentDot = dotsNav.querySelector(".current-slide");
     const targetIndex = dots.findIndex((dot) => dot === targetDot);
     const targetSlide = slides[targetIndex];
-
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
   });
+
+  // Drag / swipe
+  const THRESHOLD = 50;
+  let dragStartX = 0;
+  let isDragging = false;
+
+  const getX = (e) => {
+    if (e.changedTouches && e.changedTouches.length) return e.changedTouches[0].clientX;
+    if (e.touches && e.touches.length) return e.touches[0].clientX;
+    return e.clientX;
+  };
+
+  carousel.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    dragStartX = getX(e);
+    carousel.style.cursor = "grabbing";
+  });
+
+  carousel.addEventListener("touchstart", (e) => {
+    dragStartX = getX(e);
+  }, { passive: true });
+
+  const endDrag = (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    carousel.style.cursor = "";
+
+    const diff = dragStartX - getX(e);
+    const currentSlide = track.querySelector(".current-slide");
+    const currentDot = dotsNav.querySelector(".current-slide");
+    const currentIndex = slides.indexOf(currentSlide);
+
+    if (diff > THRESHOLD && currentIndex < slides.length - 1) {
+      const nextSlide = slides[currentIndex + 1];
+      const nextDot = dots[currentIndex + 1];
+      moveToSlide(track, currentSlide, nextSlide);
+      updateDots(currentDot, nextDot);
+      hideShowArrows(slides, prevButton, nextButton, currentIndex + 1);
+    } else if (diff < -THRESHOLD && currentIndex > 0) {
+      const prevSlide = slides[currentIndex - 1];
+      const prevDot = dots[currentIndex - 1];
+      moveToSlide(track, currentSlide, prevSlide);
+      updateDots(currentDot, prevDot);
+      hideShowArrows(slides, prevButton, nextButton, currentIndex - 1);
+    }
+  };
+
+  carousel.addEventListener("mouseup", endDrag);
+  carousel.addEventListener("mouseleave", (e) => { if (isDragging) endDrag(e); });
+  carousel.addEventListener("touchend", endDrag);
 });

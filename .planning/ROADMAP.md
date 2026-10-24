@@ -12,7 +12,7 @@ This focused MVP increment updates the portfolio's public career profile using t
 
 ### Phase 1: Integrated Portfolio Profile & Experience
 
-**Goal**: Visitors can quickly understand Noel's integrated technology-and-growth profile and verify his supplied career history without the existing portfolio experience being disrupted.
+**Goal**: As a visitor to Noel's portfolio, I want to understand his integrated technology-and-growth profile and verify all ten career experiences, so that I can quickly assess his relevant experience while the existing portfolio experience is preserved.
 **Mode:** mvp
 **Depends on**: Nothing (first phase)
 **Requirements**: PROF-01, PROF-02, SKIL-01, EXPR-01, EXPR-02, EXPR-03, EXPR-04, EXPR-05, PRES-01

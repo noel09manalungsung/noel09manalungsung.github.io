@@ -1,7 +1,7 @@
 ---
 phase: 1
 slug: integrated-portfolio-profile-experience
-status: draft
+status: approved
 shadcn_initialized: false
 preset: none
 created: 2026-10-24
@@ -25,9 +25,9 @@ No `components.json`, React/Next.js/Vite application, Tailwind configuration, or
 
 ## Scope and Content Delta
 
-This phase changes profile wording and verified experience data only. Do not redesign, add sections, change component structure, alter CSS geometry, or change behavior. Keep the existing page title/headline, summary, skills, and experience timeline roles in their current locations.
+This phase changes profile wording and verified experience data only. Do not redesign, change component structure, alter CSS geometry, or change behavior. Keep the existing page title/headline, summary, skills, and experience timeline in their current locations. Add concise summaries inside the existing timeline rows only where the supplied resumes confirm duties; this approved explanatory copy is the sole content addition and does not authorize new sections or layout changes.
 
-**Visual hierarchy:** On the landing section, the name/display heading remains the primary anchor, the integrated role headline is the immediate supporting statement, and the existing portrait balances the composition. The existing orange `Contact me` CTA remains the primary action. In the timeline, role label and date badge lead, organization follows, and no new explanatory copy is added.
+**Visual hierarchy:** On the landing section, the name/display heading remains the primary anchor, the integrated role headline is the immediate supporting statement, and the existing portrait balances the composition. The existing orange `Contact me` CTA remains the primary action. In each timeline row, the confirmed role/organization label and date badge remain primary; its concise duty summary follows as secondary supporting text within the existing row.
 
 ### Profile copy
 
@@ -49,7 +49,7 @@ Retain the current Skills section and card/grid styling. Use concise category la
 
 ### Experience presentation
 
-Keep the existing single-column timeline and its date badge/title/company hierarchy. Render one independent timeline item per entry, newest start date first. Use organization/engagement, confirmed role name where supplied, and exact date range; omit unsupported descriptions rather than filling gaps with guessed titles, duties, locations, tools, metrics, or results. Do not merge independent or concurrent entries.
+Keep the existing single-column timeline and its date badge/title/company hierarchy. Render one independent timeline row per entry, newest start date first. Use the confirmed label/organization and exact date range listed below. Include the following concise, source-supported duty summary in the same row for each listed role; do not create extra timeline rows. Where no duty summary is listed, show only confirmed role/organization and dates. Do not fill gaps with guessed titles, duties, locations, tools, metrics, or outcomes, and do not merge independent or concurrent entries.
 
 | Timeline label / organization | Confirmed date |
 |-------------------------------|----------------|
@@ -65,6 +65,21 @@ Keep the existing single-column timeline and its date badge/title/company hierar
 | Freelance Content Creation | Sep 2015–Present |
 
 Dates and concurrent timelines follow the screenshot-confirmed history recorded in `.planning/PROJECT.md` and `.planning/REQUIREMENTS.md`; keep Sitel and Sutherland visibly overlapping. Exclude bracketed or otherwise unconfirmed CV placeholders. Do not invent formal titles for entries where the approved source does not provide one.
+
+**CV-supported role summaries** (concise secondary copy within the matching existing timeline row):
+
+| Timeline entry | Summary |
+|----------------|---------|
+| Digital Marketing Executive / Data Manager — Joseph Engineering Services | Leads digital marketing and data management, including AI integration and automated research workflows. |
+| Freelance Software Engineering / AI Integration / Automation | Scopes, builds, and delivers AI integrations, automation, and websites from requirements through handover. |
+| Self-employed Product Ownership | Designs e-commerce products and manages listings, SEO, promotion, and customer service. |
+| Exacot | Resolves hardware, software, network, and account-security issues by phone, chat, and email; documents recurring solutions. |
+| FCC Supermarket | Monitors inventory movements and maintains the inventory database with Excel checks and reports. |
+| Majorel / AppleCare | Handles Apple-account inquiries and troubleshoots devices, including escalated iOS/macOS issues. |
+| Sitel Group | Uses consultative needs discovery and solution matching; do not name an unconfirmed product or customer. |
+| Sutherland | Provides front-line IT support and client relations, resolving issues and escalations. |
+| Manager / Owner — 4N Internet Café and Printing Services | Manages daily operations, IT setup and maintenance, printing, and customer service. |
+| Freelance Content Creation | Creates graphics and logos, edits images and video, and produces social content. |
 
 ## Spacing Scale
 
@@ -115,6 +130,7 @@ Accent reservation: keep orange limited to the existing emphasized elements abov
 |---------|------|
 | Primary CTA | `Contact me` — preserve existing anchor label, target, and behavior |
 | Secondary existing CTA | `Download CV` — preserve existing label, destination, and behavior |
+| Form submit | `Send` — intentionally preserve the existing label and behavior; the checker’s copywriting flag remains non-blocking and is not part of this career-content update |
 | Empty state heading | Not applicable: the profile, skills, timeline, and galleries are authored static content; do not add an empty-state section or replace verified content with a placeholder |
 | Empty state body | Not applicable to the static profile/collections; the existing contact form remains initially blank with its current field labels/placeholders and native required-field validation |
 | Error state | The contact form uses a standard POST to `https://api.web3forms.com/submit`; Name, Email, and Message use native `required` validation, while Subject is optional. No in-page custom error copy or retry/recovery UI currently exists. The remote Web3Forms response is outside this static page's authored UI. Preserve these existing behaviors and do not add an in-page error message or recovery path in this scope. |
@@ -125,7 +141,7 @@ Accent reservation: keep orange limited to the existing emphasized elements abov
 - Preserve the current section sequence, single-page structure, content containers, cards, timeline, and existing portrait/graphics/video/web portfolio assets.
 - Keep existing responsive breakpoints and layout behavior: mobile navigation toggle below the current desktop breakpoint; current 599px and 1024px layout transitions; current gallery grid/carousel behavior and mobile indicator/desktop arrow controls.
 - Preserve existing anchor navigation, active-section highlighting, scroll reveal, navigation scroll shadow, carousel controls, lazy media loading, contact links, CV link, and contact form submission behavior.
-- Do not introduce new page sections, routes, modal states, filtering, animation, controls, form behavior, or content-driven layout changes. Text may wrap naturally within the current responsive components.
+- Do not introduce new page sections, routes, modal states, filtering, animation, controls, or form behavior. The approved role summaries are supporting text inside existing timeline rows; let them wrap naturally using current responsive rules without changing layout geometry.
 - No experience item is removed because its date overlaps another role; keep all ten entries.
 
 ## UI Considerations
@@ -140,10 +156,10 @@ Applicable state considerations resolved: 11 covered, 23 backstop, 0 unresolved.
 | loading | Timeline, skills, portfolio media, contact form, navigation | 🧪 backstop | These are authored/static surfaces except existing lazy/embedded media and form submission; preserve current behavior and verify no new loading UI or behavior is introduced. |
 | error | Timeline, skills, portfolio media, contact form, navigation | 🧪 backstop | Preserve current static rendering, browser/embedded-media, and Web3Forms response behavior; do not add custom error copy or retry controls. |
 | populated | Experience timeline, Skills cards, portfolio galleries | ✅ covered | Render all ten timeline entries, five skill categories, and existing galleries in their current components and styling. |
-| partial | Timeline, skills, galleries, contact form | ✅ covered | Timeline entries contain only confirmed labels/organizations and dates; galleries retain their authored assets; existing required form controls keep native incomplete-field validation. Do not fill gaps with guessed content. |
+| partial | Timeline, skills, galleries, contact form | ✅ covered | Timeline entries contain confirmed labels/organizations and dates, plus only the role summaries explicitly listed in this contract; galleries retain their authored assets; existing required form controls keep native incomplete-field validation. Do not fill gaps with guessed content. |
 | overflow | Profile copy, navigation, timeline, skills, galleries | 🧪 backstop | Keep existing responsive grid and wrapping rules; verify no horizontal page overflow at current mobile/tablet/desktop breakpoints. |
 | zero-one-many | Experience timeline, Skills cards, portfolio galleries | 🧪 backstop | Preserve the current collection/grid layout; verify that the populated source set (10 entries, 5 skill categories, existing gallery assets) remains readable without grouping concurrent roles. |
-| long-text | Navigation labels, role titles, about summary, skill labels, form fields | 🧪 backstop | Allow natural wrapping through existing `overflow-wrap` and timeline flex-wrap rules; preserve no-wrap date badges and verify at the existing narrow viewport layout. |
+| long-text | Navigation labels, role titles and summaries, about summary, skill labels, form fields | 🧪 backstop | Allow natural wrapping through existing `overflow-wrap` and timeline flex-wrap rules; preserve no-wrap date badges and verify at the existing narrow viewport layout. |
 
 ## Registry Safety
 
@@ -153,11 +169,11 @@ Applicable state considerations resolved: 11 covered, 23 backstop, 0 unresolved.
 
 ## Checker Sign-Off
 
-- [ ] Dimension 1 Copywriting: PASS
-- [ ] Dimension 2 Visuals: PASS
-- [ ] Dimension 3 Color: PASS
-- [ ] Dimension 4 Typography: PASS
-- [ ] Dimension 5 Spacing: PASS
-- [ ] Dimension 6 Registry Safety: PASS
+- [x] Dimension 1 Copywriting: FLAG — latest checker result; the existing `Send` form CTA is intentionally unchanged and documented. This non-blocking flag does not prevent approval.
+- [x] Dimension 2 Visuals: PASS
+- [x] Dimension 3 Color: PASS
+- [x] Dimension 4 Typography: PASS
+- [x] Dimension 5 Spacing: PASS
+- [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** pending
+**Approval:** approved (2026-10-24) — role summaries now meet the approved CV-supported copy decision; retain the single non-blocking `Send` CTA flag as intentionally out of scope.

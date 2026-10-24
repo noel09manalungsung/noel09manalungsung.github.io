@@ -51,12 +51,12 @@ Give visitors a credible, accurate, easy-to-scan picture of Noel's experience an
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Lead with an integrated technology-and-growth profile | The three CVs represent complementary parts of Noel's experience | — Pending |
-| Use the LinkedIn screenshots to resolve experience dates | Screenshots provide a consistent employment timeline | — Pending |
+| Lead with an integrated technology-and-growth profile | The three CVs represent complementary parts of Noel's experience | ✓ Good |
+| Use the LinkedIn screenshots to resolve experience dates | Screenshots provide a consistent employment timeline | ✓ Good |
 | Add concise CV-supported role summaries where available | The portfolio should communicate experience details, not dates alone | — Pending |
-| Omit unconfirmed metrics and tool claims | The source CVs explicitly mark those details for confirmation | — Pending |
-| Skip codebase mapping for this focused content update | The current page and relevant sections were inspected directly | — Pending |
-| Preserve the existing design and galleries | The request is to update portfolio details, not redesign it | — Pending |
+| Omit unconfirmed metrics and tool claims | The source CVs explicitly mark those details for confirmation | ✓ Good |
+| Skip codebase mapping for this focused content update | The current page and relevant sections were inspected directly | ✓ Good |
+| Preserve the existing design and galleries | The request is to update portfolio details, not redesign it | ✓ Good |
 
 ## Evolution
 

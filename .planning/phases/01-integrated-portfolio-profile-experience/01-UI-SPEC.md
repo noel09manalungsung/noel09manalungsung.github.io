@@ -117,7 +117,7 @@ Accent reservation: keep orange limited to the existing emphasized elements abov
 | Secondary existing CTA | `Download CV` — preserve existing label, destination, and behavior |
 | Empty state heading | Not applicable: the profile, skills, timeline, and galleries are authored static content; do not add an empty-state section or replace verified content with a placeholder |
 | Empty state body | Not applicable to the static profile/collections; the existing contact form remains initially blank with its current field labels/placeholders and native required-field validation |
-| Error state | No new profile/gallery/form error UI or copy. Preserve existing native form validation and current Web3Forms response behavior unchanged |
+| Error state | The contact form uses a standard POST to `https://api.web3forms.com/submit`; Name, Email, and Message use native `required` validation, while Subject is optional. No in-page custom error copy or retry/recovery UI currently exists. The remote Web3Forms response is outside this static page's authored UI. Preserve these existing behaviors and do not add an in-page error message or recovery path in this scope. |
 | Destructive confirmation | None — this phase introduces no destructive actions |
 
 ## Layout and Interaction Preservation

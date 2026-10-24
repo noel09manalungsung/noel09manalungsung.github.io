@@ -22,8 +22,8 @@ See: .planning/PROJECT.md (updated 2026-10-24)
 
 Phase: 1 of 1 (Integrated Portfolio Profile & Experience)
 Plan: 0 of TBD
-Status: Roadmap draft created; awaiting user approval
-Last activity: 2026-10-24 — Initial roadmap drafted with all eight v1 requirements mapped to one end-to-end phase.
+Status: Roadmap revision in progress for approval; Phase 1 planning paused pending approval
+Last activity: 2026-10-24 — Added EXPR-05 to the single Phase 1 roadmap and updated requirement coverage; awaiting approval before commit.
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -53,22 +53,23 @@ Recent decisions affecting current work (full decision log is in PROJECT.md):
 - Use the supplied CVs and screenshot-confirmed dates as source of truth.
 - Present Sitel and Sutherland as concurrent roles; do not reconcile away the confirmed overlap.
 - Omit bracketed or otherwise unconfirmed CV placeholders.
+- Add concise summaries only for roles whose duties are confirmed in the supplied CVs; otherwise show only confirmed role, organization, and dates.
 - Keep the existing visual identity, responsive static-site structure, navigation, galleries, and contact behavior.
 
 ### Pending Todos
 
-None yet.
+Await approval of the revised single-phase roadmap before resuming Phase 1 planning.
 
 ### Blockers/Concerns
 
-None known. Await roadmap approval before phase planning.
+No implementation blocker known. Phase 1 planning is paused until the roadmap revision is approved.
 
 ## Deferred Items
 
-No deferred v1 items; unrelated redesign and new functionality remain out of scope.
+No deferred v1 items; unrelated redesign and new functionality remain out of scope. EXPR-05 is included in the Phase 1 roadmap revision for approval.
 
 ## Session Continuity
 
 Last session: 2026-10-24
-Stopped at: Initial roadmap and state draft written; traceability set to Phase 1.
+Stopped at: Revised Phase 1 roadmap and coverage updated for EXPR-05; awaiting user approval before commit and Phase 1 planning.
 Resume file: None

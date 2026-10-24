@@ -62,4 +62,4 @@ No deferred requirements are included in this content-only increment.
 
 ---
 *Requirements defined: 2026-10-24*
-*Last updated: 2026-10-24 after initial roadmap mapping*
+*Last updated: 2026-10-24 during roadmap revision for EXPR-05*

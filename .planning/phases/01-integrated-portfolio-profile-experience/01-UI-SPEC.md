@@ -25,7 +25,7 @@ No `components.json`, React/Next.js/Vite application, Tailwind configuration, or
 
 ## Scope and Content Delta
 
-This phase changes profile wording and verified experience data only. Do not redesign, change component structure, alter CSS geometry, or change behavior. Keep the existing page title/headline, summary, skills, and experience timeline in their current locations. Add concise summaries inside the existing timeline rows only where the supplied resumes confirm duties; this approved explanatory copy is the sole content addition and does not authorize new sections or layout changes.
+This phase changes profile wording and verified experience data only. Do not redesign, change component structure, alter CSS geometry, or change behavior. Keep the existing meta description, page title/headline, summary, skills, and experience timeline in their current locations. Replace the meta description with the source-supported copy below to remove unconfirmed title/location claims. Add concise summaries inside the existing timeline rows only where the supplied resumes confirm duties; this approved explanatory copy and metadata replacement do not authorize new sections or layout changes.
 
 This career-content phase makes no contact form changes. Preserve the existing form markup, native validation, POST submission, button label, and resulting external response behavior; do not add form UI.
 
@@ -34,6 +34,7 @@ This career-content phase makes no contact form changes. Preserve the existing f
 ### Profile copy
 
 - **Document title:** `Noel Manalungsung | Technology & Growth`
+- **Meta description:** `Noel Manalungsung works across AI automation and integrations, marketing operations and data, technical support and client-facing solutions, software development, and creative content.`
 - **Landing role headline:** `Technology & Growth Professional`
 - **Landing supporting line:** `AI automation & integrations · Marketing operations · Software development`
 - **About summary:** `I work across AI automation and integrations, marketing operations and data, technical support and client-facing solutions, software development, and creative content. My experience spans employment and independent work across technology, marketing, and creative disciplines.`

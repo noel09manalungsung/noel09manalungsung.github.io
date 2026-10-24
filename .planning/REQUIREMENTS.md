@@ -7,7 +7,7 @@
 
 ### Profile
 
-- [x] **PROF-01**: A visitor can identify Noel's integrated technology-and-growth focus from the page title and landing headline.
+- [x] **PROF-01**: A visitor can identify Noel's integrated technology-and-growth focus from the page title, meta description, and landing headline.
 - [x] **PROF-02**: A visitor can read an updated about summary that reflects Noel's AI automation, marketing operations, technical support, client-facing, development, and creative experience.
 
 ### Skills

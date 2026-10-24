@@ -150,6 +150,7 @@ status: complete
 - Task 2 exact assertions passed for ten title/organization/date/summary rows in order, including the Sitel/Sutherland overlap.
 - Each of the ten summaries was checked against its cited section in the original CV; no placeholder or unconfirmed detail was added.
 - The plan's final HTML5 baseline comparison using pinned `html-validate@11.17.0` passed with no findings beyond the `8b5a784:index.html` baseline. `git diff --check` and the non-application-file scope assertions passed.
+- After independent verification found the old metadata still claimed UI/UX design and a Dubai location, the user approved replacing it with the source-supported integrated profile summary. The new metadata passes an exact-text assertion and the HTML5 baseline comparison.
 - Existing navigation, local scripts/styles, portfolio content, CV link, form endpoint, required fields, email type, optional subject, and `Send` label were verified unchanged.
 - Local Chrome checks at 375, 599, 768, 1024, and 1440 CSS pixels reported no horizontal overflow. The initial blank form remained invalid, Email remained `type=email`, Subject remained optional, and no form submission was attempted.
 - At 375px, after the existing reveal behavior completed, both Sitel and Sutherland rows rendered separately in view with their confirmed overlapping dates.
@@ -161,6 +162,7 @@ status: complete
 - Followed the UI-SPEC verbatim for profile copy, skill categories, role labels, chronology, and duty summaries.
 - Retained each experience as a separate timeline item and omitted locations and all unconfirmed CV specifics.
 - Preserved the existing static-page structure and the existing contact form without entering or submitting valid contact data.
+- Replaced the unconfirmed UI/UX and Dubai metadata only after the user approved a source-supported summary; updated D-11 and the relevant plan/UI references to record the decision.
 
 ## Deviations from Plan
 
@@ -173,10 +175,10 @@ None — the approved content scope and verification gates were completed as wri
 
 ## Prohibition and Verifier Status
 
-- Both plan prohibitions were satisfied: unverified professional claims were omitted, and the supplied CV documents were neither modified nor copied.
+- The user explicitly confirmed the published career details are source-accurate and the supplied CVs were neither modified nor copied; the repository diff confirms no CV files were added. These are now recorded as human-judgment verification rather than requiring new test tooling.
 - No valid contact data was entered or submitted.
 - The approved UI-SPEC records one accepted, non-blocking Copywriting flag for the unchanged `Send` CTA. No new flagged prohibition was found.
-- No separate independent honest-verifier report was produced by this executor; the planned automated assertions, HTML5 baseline comparison, and local-browser checks passed.
+- Independent verification initially found the outdated metadata claim and later flagged the two negative guarantees as lacking persistent automated tests. The user approved the metadata correction and explicitly accepted human verification of the source-accuracy and CV read-only/copy constraints; final verification now passes all nine requirements and all seven plan must-haves.
 
 ## User Setup Required
 
@@ -184,7 +186,7 @@ None — no external service configuration or dependency was added.
 
 ## Next Phase Readiness
 
-All nine Phase 1 requirements have implementation and validation evidence. The plan is ready for the project's independent phase-level verification and completion workflow.
+All nine Phase 1 requirements have implementation and validation evidence. The user-approved metadata correction passed its focused check, and independent phase verification is complete.
 
 ---
 *Phase: 01-integrated-portfolio-profile-experience*
@@ -194,3 +196,11 @@ All nine Phase 1 requirements have implementation and validation evidence. The p
 
 - Summary file exists at the planned phase path.
 - Task commits `2ba990f` and `63ddf3c` are present and include the required `Co-authored-by` trailer.
+
+## Post-verification correction
+
+The independent verifier identified an outdated meta description that still named an unconfirmed UI/UX role and Dubai location. The user chose to replace it with:
+
+> Noel Manalungsung works across AI automation and integrations, marketing operations and data, technical support and client-facing solutions, software development, and creative content.
+
+The phase context, UI contract, pattern map, plan, roadmap criterion, and PROF-01 now record the approved correction. The focused meta-description assertion and HTML5 comparison against the original baseline pass. Local browser checks also confirmed no horizontal overflow at 375, 599, 768, 1024, or 1440 CSS pixels; mobile navigation opens/closes; the desktop gallery advances; and the blank contact form remains invalid. The final independent verification passes all nine requirements and all seven plan must-haves; both source-accuracy and CV-handling prohibitions were accepted as human-judgment checks by the user.

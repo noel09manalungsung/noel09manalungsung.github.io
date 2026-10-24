@@ -10,7 +10,7 @@
 |-------------------|------|-----------|----------------|---------------|
 | `index.html` | component (static page/document) | request-response (static HTML rendered in the browser; no application data flow) | Existing page sections in `index.html` | exact structural match |
 
-The only expected code change is content in the existing document title, landing role/supporting headline, About summary, Skills cards, and Experience timeline. Preserve the existing section locations and markup/CSS class structure. Do not change stylesheets, navigation, galleries, scripts, form markup, or behavior. The meta description is not named in the approved content delta; do not expand scope to it.
+The only expected code change is content in the existing meta description, document title, landing role/supporting headline, About summary, Skills cards, and Experience timeline. The original meta description's UI/UX and Dubai claims were explicitly approved for replacement with source-supported integrated-profile wording (D-11). Preserve the existing section locations and markup/CSS class structure. Do not change stylesheets, navigation, galleries, scripts, form markup, or behavior.
 
 ## Pattern Assignments
 
@@ -162,7 +162,7 @@ The UI-SPEC identifies CV filename/section evidence for every summary. Omit all 
 - Do not edit CSS to accommodate copy; long timeline titles already use `.timeline__meta` flex wrapping and date badges remain unwrapped (`style.css`, lines 563–590).
 
 ### Static content and preservation boundary
-**Source:** `index.html` (single-page static markup); phase decisions D-08 through D-10 and `01-UI-SPEC.md`.  
+**Source:** `index.html` (single-page static markup); phase decisions D-08 through D-11 and `01-UI-SPEC.md`.
 **Apply to:** The entire change.
 
 - No imports, auth/guards, runtime data fetch, validation, or error handling apply to these static content sections.

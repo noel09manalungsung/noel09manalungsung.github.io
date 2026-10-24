@@ -16,7 +16,7 @@ Update the existing single-page portfolio's professional positioning, About summ
 
 ### Integrated Profile
 - **D-01:** Position Noel as an integrated technology-and-growth professional, not only as a digital marketer, developer, designer, or support specialist.
-- **D-02:** Update the document title, landing headline/supporting line, and About summary in the existing page sections only.
+- **D-02:** Update the document title, meta description, landing headline/supporting line, and About summary in the existing page locations only.
 - **D-03:** Retain five concise skill categories representing AI automation/integrations, marketing operations/data, technical support/client-facing solutions, software/front-end development, and creative content/design.
 
 ### Verified Experience
@@ -29,6 +29,7 @@ Update the existing single-page portfolio's professional positioning, About summ
 - **D-08:** Keep the existing visual design, component structure, CSS geometry, section locations, and responsive behavior. Do not redesign or add a section.
 - **D-09:** Preserve navigation, portrait, graphics/video/web portfolio assets and links, contact/social links, CV destination, carousel/reveal behavior, form submission endpoint, native validation, and existing `Send` label. Do not add form UI or change form behavior.
 - **D-10:** Verify the updated text and all ten roles against the CV and screenshot sources, then check the existing static page for valid markup and responsive overflow/layout regressions.
+- **D-11:** Replace the existing meta description's unconfirmed UI/UX title and Dubai location claims with the source-supported integrated profile summary. The user explicitly approved this correction after independent verification identified the unsupported metadata.
 
 ### the agent's Discretion
 - Choose concise, natural wording that fits existing components without changing their structure or style.

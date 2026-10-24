@@ -21,6 +21,7 @@ Give visitors a credible, accurate, easy-to-scan picture of Noel's experience an
 - [ ] Present an integrated technology-and-growth professional profile
 - [ ] Align the about summary and skills with the supplied CVs without publishing unverified claims
 - [ ] Present all supplied roles and self-employed experience with the screenshot-confirmed dates
+- [ ] Add concise, CV-supported summaries for roles where the source provides confirmed duties
 - [ ] Preserve the current visual identity and existing portfolio and contact behavior
 
 ### Out of Scope
@@ -37,6 +38,7 @@ Give visitors a credible, accurate, easy-to-scan picture of Noel's experience an
 - LinkedIn screenshots confirm these experience dates: Joseph Engineering Services, Nov 2025–Present; freelance software engineering / AI integration / automation, Mar 2023–Present; Exacot, Mar 2023–Mar 2025; FCC Supermarket, Mar 2022–Feb 2023; Majorel / AppleCare, Feb 2021–Mar 2022; Sitel Group, Nov 2019–Jan 2021; Sutherland, Oct 2019–Sep 2020; 4N Internet Café and Printing Services, Sep 2015–Jan 2020; freelance content creation, Sep 2015–Present; and self-employed product ownership, Mar 2023–Present.
 - Sitel and Sutherland overlap in 2019–2020; show both as concurrent roles rather than attempting to resolve the overlap.
 - The CVs contain bracketed placeholders for tools, metrics, certifications, and project specifics. Treat these as unverified and omit them unless Noel confirms them.
+- Use concise summaries of confirmed role duties where supplied; where a CV only confirms a role and dates, show those facts without inventing a description.
 - No independent third-party research is needed for a content update whose source of truth is the supplied CV and screenshots.
 
 ## Constraints
@@ -51,6 +53,7 @@ Give visitors a credible, accurate, easy-to-scan picture of Noel's experience an
 |----------|-----------|---------|
 | Lead with an integrated technology-and-growth profile | The three CVs represent complementary parts of Noel's experience | — Pending |
 | Use the LinkedIn screenshots to resolve experience dates | Screenshots provide a consistent employment timeline | — Pending |
+| Add concise CV-supported role summaries where available | The portfolio should communicate experience details, not dates alone | — Pending |
 | Omit unconfirmed metrics and tool claims | The source CVs explicitly mark those details for confirmation | — Pending |
 | Skip codebase mapping for this focused content update | The current page and relevant sections were inspected directly | — Pending |
 | Preserve the existing design and galleries | The request is to update portfolio details, not redesign it | — Pending |

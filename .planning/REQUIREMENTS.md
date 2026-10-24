@@ -20,6 +20,7 @@
 - [ ] **EXPR-02**: A visitor can find the Exacot (Mar 2023–Mar 2025), FCC Supermarket (Mar 2022–Feb 2023), Majorel / AppleCare (Feb 2021–Mar 2022), Sitel Group (Nov 2019–Jan 2021), and Sutherland (Oct 2019–Sep 2020) roles with the supplied titles and dates.
 - [ ] **EXPR-03**: A visitor can find the ongoing freelance content creation (Sep 2015–Present) and product ownership (Mar 2023–Present), plus the 4N Internet Café and Printing Services Manager / Owner role (Sep 2015–Jan 2020).
 - [ ] **EXPR-04**: The page does not publish unconfirmed CV placeholders as facts, and overlapping Sitel / Sutherland dates are presented as concurrent experience.
+- [ ] **EXPR-05**: Each role with confirmed duties in the supplied CVs has a concise, source-supported summary; roles without confirmed duties show only confirmed role, organization, and dates.
 
 ### Preservation
 
@@ -50,11 +51,12 @@ No deferred requirements are included in this content-only increment.
 | EXPR-02 | Phase 1 | Pending |
 | EXPR-03 | Phase 1 | Pending |
 | EXPR-04 | Phase 1 | Pending |
+| EXPR-05 | Phase 1 | Pending |
 | PRES-01 | Phase 1 | Pending |
 
 **Coverage:**
-- v1 requirements: 8 total
-- Mapped to phases: 8
+- v1 requirements: 9 total
+- Mapped to phases: 9
 - Unmapped: 0
 - Duplicate phase mappings: 0
 

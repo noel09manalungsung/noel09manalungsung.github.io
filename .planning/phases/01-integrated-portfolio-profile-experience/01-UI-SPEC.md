@@ -53,35 +53,35 @@ Retain the current Skills section and card/grid styling. Use concise category la
 
 Keep the existing single-column timeline and its date badge/title/company hierarchy. Render one independent timeline row per entry, newest start date first. Use the confirmed label/organization and exact date range listed below. Include the following concise, source-supported duty summary in the same row for each listed role; do not create extra timeline rows. Where no duty summary is listed, show only confirmed role/organization and dates. Do not fill gaps with guessed titles, duties, locations, tools, metrics, or outcomes, and do not merge independent or concurrent entries.
 
-| Timeline label / organization | Confirmed date |
-|-------------------------------|----------------|
+| Confirmed role title / organization | Confirmed date |
+|-------------------------------------|----------------|
 | Digital Marketing Executive / Data Manager — Joseph Engineering Services | Nov 2025–Present |
-| Freelance Software Engineering / AI Integration / Automation | Mar 2023–Present |
-| Self-employed Product Ownership | Mar 2023–Present |
-| Exacot | Mar 2023–Mar 2025 |
-| FCC Supermarket | Mar 2022–Feb 2023 |
-| Majorel / AppleCare | Feb 2021–Mar 2022 |
-| Sitel Group | Nov 2019–Jan 2021 |
-| Sutherland | Oct 2019–Sep 2020 |
+| Freelance Software Engineer, AI Integration, and Automation Specialist — Freelance / Self-Employed | Mar 2023–Present |
+| Product Owner — Self-Employed | Mar 2023–Present |
+| Information Technology Support Specialist — Exacot | Mar 2023–Mar 2025 |
+| Data Manager — FCC Supermarket | Mar 2022–Feb 2023 |
+| AppleCare Advisor — Majorel | Feb 2021–Mar 2022 |
+| Sales Executive — Sitel Group | Nov 2019–Jan 2021 |
+| IT Support / Client Relations Specialist — Sutherland | Oct 2019–Sep 2020 |
 | Manager / Owner — 4N Internet Café and Printing Services | Sep 2015–Jan 2020 |
-| Freelance Content Creation | Sep 2015–Present |
+| Freelance Content Creator — Self-Employed | Sep 2015–Present |
 
-Dates and concurrent timelines follow the screenshot-confirmed history recorded in `.planning/PROJECT.md` and `.planning/REQUIREMENTS.md`; keep Sitel and Sutherland visibly overlapping. Exclude bracketed or otherwise unconfirmed CV placeholders. Do not invent formal titles for entries where the approved source does not provide one.
+Role titles, organizations, and dates follow the screenshot-confirmed history recorded in `.planning/phases/01-integrated-portfolio-profile-experience/01-CONTEXT.md` D-04; keep Sitel and Sutherland visibly overlapping. The screenshots are the source of truth for title/date display where CV drafts differ. Exclude bracketed or otherwise unconfirmed CV placeholders. Do not add or infer titles beyond those listed above.
 
 **CV-supported role summaries** (concise secondary copy within the matching existing timeline row). Each source reference names the original CV filename and the section supporting that entry. Bracketed source placeholders and their associated unconfirmed specifics are excluded.
 
 | Timeline entry | Summary (claims stated in cited source) | Source evidence (CV filename — section) | Bracketed `[confirm]` details excluded |
 |----------------|------------------------------------------|----------------------------------------|---------------------------------------|
 | Digital Marketing Executive / Data Manager — Joseph Engineering Services | Leads digital marketing and data management, including AI integration and automated research workflows. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Research scope, systems/channels, and metrics remain unconfirmed; omitted. |
-| Freelance Software Engineering / AI Integration / Automation | Scopes, builds, and delivers AI integrations, automation, and websites from requirements through handover. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Freelance & Projects | Project-specific details/results and unconfirmed language/tool claims omitted. |
-| Self-employed Product Ownership | Designs e-commerce products and manages listings, SEO, promotion, and customer service. | `Noel Manalungsung — CV (Growth & Marketing Operations).docx` — Freelance & Projects | Order and revenue metrics remain unconfirmed; omitted. |
-| Exacot | Resolves hardware, software, network, and account-security issues by phone, chat, and email; documents recurring solutions. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Satisfaction/resolution metrics and unconfirmed Identity Defender case details omitted. |
-| FCC Supermarket | Monitors inventory movements and maintains the inventory database with Excel checks and reports. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | SKU/branch counts and error-reduction metric remain unconfirmed; omitted. |
-| Majorel / AppleCare | Handles Apple-account inquiries and troubleshoots devices, including escalated iOS/macOS issues. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Contact-volume and target claims remain unconfirmed; omitted. |
-| Sitel Group | Uses consultative needs discovery and solution matching; do not name an unconfirmed product or customer. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Product/customer specifics and quota claims remain unconfirmed; none are named. |
-| Sutherland | Provides front-line IT support and client relations, resolving issues and escalations. | `Noel Manalungsung — CV (Solutions Consultant & Technical Account Management).docx` — Professional Experience | Client/account specifics and retention metrics remain unconfirmed; omitted. |
+| Freelance Software Engineer, AI Integration, and Automation Specialist — Freelance / Self-Employed | Scopes, builds, and delivers AI integrations, automation, and websites from requirements through handover. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Freelance & Projects | Project-specific details/results and unconfirmed language/tool claims omitted. |
+| Product Owner — Self-Employed | Designs e-commerce products and manages listings, SEO, promotion, and customer service. | `Noel Manalungsung — CV (Growth & Marketing Operations).docx` — Freelance & Projects | Order and revenue metrics remain unconfirmed; omitted. |
+| Information Technology Support Specialist — Exacot | Resolves hardware, software, network, and account-security issues by phone, chat, and email; documents recurring solutions. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Satisfaction/resolution metrics and unconfirmed Identity Defender case details omitted. |
+| Data Manager — FCC Supermarket | Monitors inventory movements and maintains the inventory database with Excel checks and reports. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | SKU/branch counts and error-reduction metric remain unconfirmed; omitted. |
+| AppleCare Advisor — Majorel | Handles Apple-account inquiries and troubleshoots devices, including escalated iOS/macOS issues. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Contact-volume and target claims remain unconfirmed; omitted. |
+| Sales Executive — Sitel Group | Uses consultative needs discovery and solution matching; do not name an unconfirmed product or customer. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Professional Experience | Product/customer specifics and quota claims remain unconfirmed; none are named. |
+| IT Support / Client Relations Specialist — Sutherland | Provides front-line IT support and client relations, resolving issues and escalations. | `Noel Manalungsung — CV (Solutions Consultant & Technical Account Management).docx` — Professional Experience | Client/account specifics and retention metrics remain unconfirmed; omitted. |
 | Manager / Owner — 4N Internet Café and Printing Services | Manages daily operations, IT setup and maintenance, printing, and customer service. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Freelance & Projects | No bracketed details are used in this summary. |
-| Freelance Content Creation | Creates graphics and logos, edits images and video, and produces social content. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Freelance & Projects | Client industries and other bracketed specifics omitted. |
+| Freelance Content Creator — Self-Employed | Creates graphics and logos, edits images and video, and produces social content. | `Noel Manalungsung — CV (AI Automation & Solutions).docx` — Freelance & Projects | Client industries and other bracketed specifics omitted. |
 
 For FCC Supermarket, the source confirms monitoring stock movements, maintaining the inventory database, and Excel checks/reports to flag discrepancies. The bracketed `X%` error-reduction outcome is unconfirmed and is not included.
 
@@ -173,13 +173,13 @@ Applicable state considerations resolved: 11 covered, 23 backstop, 0 unresolved.
 
 ## Checker Sign-Off
 
-- [x] Dimension 1 Copywriting: FLAG — latest checker result; the existing `Send` form CTA is intentionally unchanged and documented. This non-blocking flag does not prevent approval.
+- [x] Dimension 1 Copywriting: FLAG — final checker result; the existing `Send` form CTA is intentionally unchanged and documented. This non-blocking flag does not prevent approval.
 - [x] Dimension 2 Visuals: PASS
 - [x] Dimension 3 Color: PASS
 - [x] Dimension 4 Typography: PASS
 - [x] Dimension 5 Spacing: PASS
 - [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** approved (2026-10-24) — role summaries now meet the approved CV-supported copy decision; retain the single non-blocking `Send` CTA flag as intentionally out of scope.
+**Approval:** approved (2026-10-24) — the final checker verified the complete title/date list and cited summaries; retain the single non-blocking `Send` CTA flag as intentionally out of scope.
 
-**Revision note:** Added per-entry CV filename/section evidence and clarified the implemented native-validation and Web3Forms boundary without changing the approved visual, color, typography, spacing, registry, or CTA decisions. This document revision is not a new checker run; the recorded checker findings above remain the prior approved results.
+**Revision note:** Added per-entry CV filename/section evidence, reconciled all role titles to the screenshot-confirmed history, and clarified the implemented native-validation and Web3Forms boundary. The final UI checker approved the contract with one accepted non-blocking `Send` CTA flag.
